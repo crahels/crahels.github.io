@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Huffman, LZW, DCM Algorithm</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="home.js"></script>
+</head>
+
+<body>
+	<div class="tab">
+  		<button class="tablinks" onclick="openCity(event, 'London'); topFunction()" id="defaultOpen"><div id="Header">Home</div></button>
+        <button class="tablinks" onclick="openCity(event, 'Paris'); topFunction()"><div id="Header">About Me</div></button>
+  		<button class="tablinks" onclick="openCity(event, 'Tokyo'); topFunction()"><div id="Header">Content</div></button>
+	</div>
+    <div class="container">
+	<div class="container_top">
+		<div class="mySlides fade">
+  			<img src="img/header3.jpg" style="width: 100%">
+  			<div class="text">Your Only Limit Is You</div>
+		</div>
+
+		<div class="mySlides fade">
+  			<img src="img/header2.jpg" style="width: 100%">
+  			<div class="text2">Love Your Neighbor As Yourself</div>
+		</div>
+
+		<div class="mySlides fade">
+  			<img src="img/header1.jpg" style="width: 100%">
+  			<div class="text">Stop Wishing. Start Doing.</div>
+		</div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+    
+	<div id="London" class="tabcontent">
+        <div id="container_left">
+        	<div id="text">
+        		<h1 align="center">Welcome to My Website!</h1>
+  				<p>Hai! Selamat datang di website saya. To be honest, ini merupakan website pertama saya yang bukan merupakan blog. Thanks to github dan IRK! Jadi, sebenarnya tujuan utama saya buat website ini adalah dalam rangka memenuhi tugas yang diberikan oleh kakak-kakak lab IRK kepada Ca-IRK 2017. Karena ini merupakan website yang pertama kali saya buat, maklum ya teman-teman kontennya hanya sedikit dan design-nya masih kelihatan pemula banget.</p>
+                <p>Sebenarnya saya dari dulu tidak begitu tertarik dengan web design. Tapi, setelah membuat website ini, dipikir-pikir seru juga yah bikin website itu, meski ribet karena harus memikirkan dari segi design dan code-nya sekaligus. Segitu aja deh intermezzo-nya. Selamat menjelajah!</p>
+        	</div>
+        </div>
+        <div id="container_right">
+        	<div id="text">
+            	<h3>Contact Me:</h3>
+        		<a href="https://www.facebook.com/crahels" class="fa fa-facebook"></a>Rachel Sidney<br/>
+				<a href="#" class="fa fa-google"></a>sidney.rachel@gmail.com<br/>
+				<a href="https://www.instagram.com/crahels/" class="fa fa-instagram"></a>@crahels<br/>
+				<a href="#" class="fa fa-snapchat-ghost"></a>@crahels<br/>
+				<a href="https://twitter.com/re_sidney" class="fa fa-twitter"></a>@re_sidney<br/>
+        	</div>
+        </div>
+    </div>
+
+	<div id="Paris" class="tabcontent">
+   		<div id="container_left">
+        	<div id="text">
+        		<h1 align="center">Find Out More About Me</h1>
+                <p style="text-align:center;"><img src="img/me.png" class="me"/></p>
+  				<p>Selamat datang di laman ini. Di sini saya akan berbagi cerita sedikit mengenai diri saya. Saya dilahirkan dengan nama Rachel Sidney Devianti di Jakarta pada tanggal 18 Desember 1997. Namun, saat ini saya menghabiskan sebagian besar waktu saya untuk berkuliah di Bandung. Jurusan yang saya ambil adalah Teknik Informatika dan pada saat ini saya akan memasuki semester ke-5.</p>
+                <p>Jangan kalian pikir karena saya mengambil jurusan Teknik Informatika lalu saya hobi coding yah. Coding itu hanyalah hal yang saya sukai, namun hobi saya yang sesungguhnya adalah naik sepeda dan nonton. Di sela-sela kesibukan saya, saya selalu menyempatkan diri untuk menonton, entah itu nonton bioskop, nonton Youtube, ataupun nonton online. Karena bagi saya, ketika kita terlalu sibuk, kita cenderung akan menjadi stress. Oleh sebab itu, kita butuh refreshing untuk menjernihkan otak kita, salah satunya adalah dengan melakukan hal yang kita sukai.</p>
+                <p>Motto hidup yang saya pegang teguh sekarang ini adalah "Love your neighbor as yourself". Bagi saya, yang terpenting di dalam hidup ini adalah dimana kita dapat menyayangi sesama kita seperti kita menyayangi diri kita sendiri. Hal ini sebenarnya sangat sulit untuk dilakukan mengingat sifat dasar kita adalah cenderung menyayangi diri kita sendiri dan tidak memperdulikan orang lain. Namun, seiring berjalannya waktu saya makin belajar untuk memaknai motto hidup saya ini. Sekian info-info yang dapat saya bagikan mengenai diri saya. Senang berbagi dengan kamu!</p>
+        	</div>
+        </div>
+        <div id="container_right">
+        	<div id="text">
+            	<h3>Contact Me:</h3>
+        		<a href="https://www.facebook.com/crahels" class="fa fa-facebook"></a>Rachel Sidney<br/>
+				<a href="#" class="fa fa-google"></a>sidney.rachel@gmail.com<br/>
+				<a href="https://www.instagram.com/crahels/" class="fa fa-instagram"></a>@crahels<br/>
+				<a href="#" class="fa fa-snapchat-ghost"></a>@crahels<br/>
+				<a href="https://twitter.com/re_sidney" class="fa fa-twitter"></a>@re_sidney<br/>
+        	</div>
+        </div>
+    </div>
+
+	<div id="Tokyo" class="tabcontent">
+    	<div id="container_left2">
+        	<div id="text">
+  			<h1 align="center">Algoritma Huffman, DMC, dan LZW dalam Kompresi Data</h1>
+  			<p>Kompresi data adalah proses pengubahan sekumpulan data menjadi suatu kode untuk menghemat tempat penyimpanan dan waktu untuk melakukan transmisi data. Terdapat banyak algoritma yang dapat digunakan untuk melakukan kompresi data. Berdasarkan tipe peta kode yang digunakan untuk mengubah pesan awal (file input) menjadi sekumpulan codeword, metode kompresi terbagi menjadi dua kelompok, yaitu:</p>
+            <ol>
+            	<li>Metode Statik<br/>
+                	Metode ini menggunakan peta kode yang selalu sama. Contoh algoritma yang menerapkan metode ini adalah algoritma Huffman statik. Metode ini membutuhkan dua fase (two-pass):
+                	<ul>
+                    	<li>Fase pertama untuk menghitung probabilitas kemunculan tiap simbol/karakter dan menentukan peta kodenya.</li>
+                    	<li>Fase kedua untuk mengubah pesan menjadi kumpulan kode yang akan ditransmisikan.</li>
+                    </ul>
+                </li>
+                <li>Metode Dinamik<br/>
+                	Metode ini menggunakan peta kode yang dapat berubah dari waktu ke waktu. Metode ini disebut adaptif karena peta kode mampu beradaptasi terhadap perubahan karakteristik isi file selama proses kompresi berlangsung. Metode ini bersifat one-pass, karena hanya diperlukan satu kali pembacaan terhadap isi file. Contoh: algoritma LZW dan DMC.
+                </li>
+            </ol>
+            <p>Ada beberapa faktor yang sering menjadi pertimbangan dalam memilih suatu metode kompresi yang tepat, yaitu: kecepatan kompresi, sumber daya yang dibutuhkan (memori dan kecepatan PC), ukuran file hasil kompresi, besarnya redundansi, dan kompleksitas algoritma. Berikut ini akan dibahas mengenai kompresi data dengan menggunakan algoritma Huffman, LZW, dan DMC. Kemudian, akan dianalisis rasio/perbandingan ukuran file hasil kompresi terhadap file asli dan kecepatan kompresi untuk masing-masing algoritma.</p>
+            <h3>Algoritma Huffman</h3>
+            <p>Algoritma Huffman ditemukan oleh David Huffman pada tahun 1952. Algoritma ini merupakan salah satu algoritma paling lama dan paling terkenal dalam kompresi teks dan seringkali diajarkan pada mata kuliah Informatika. Algoritma Huffman menggunakan prinsip pengkodean yang mirip dengan kode Morse, yaitu tiap karakter (simbol) dikodekan hanya dengan kombinasi beberapa bit, dimana karakter yang sering muncul dikodekan dengan rangkaian bit yang pendek dan karakter yang jarang muncul dikodekan dengan rangkaian bit yang lebih panjang. Berikut ini adalah cara kerja algoritma Huffman secara lengkap. Untuk memudahkan, akan diambil contoh string yang akan dikodekan, yaitu “ABACCDA”.</p>
+            <ol>
+            	<li>Pilih dua simbol dengan peluang paling kecil, yaitu: simbol B dan D. Kedua symbol dikombinasikan sebagai simpul orangtua dari simbol B dan D sehingga menjadi simbol BD dengan peluang 1/7 + 1/7 = 2/7, yaitu jumlah peluang kedua anaknya.</li>
+                <li>Selanjutnya, pilih dua simbol berikutnya, termasuk simbol baru, yang mempunyai peluang terkecil.</li>
+                <li>Ulangi langkah 1 dan 2 sampai seluruh simbol habis.</li>
+            </ol>
+            <p>Tanpa menggunakan algoritma Huffman, dalam kode ASCII, string 7 huruf “ABACCDA” membutuhkan representasi 7 × 8 bit = 56 bit, dengan rincian sebagai berikut:<br/>
+            01000001(A)&emsp;01000010(B)&emsp;01000001(A)&emsp;01000011(C)&emsp;01000011(C)&emsp;01000100(D)&emsp;01000001(A)<br/></p>
+            <p>Penerapan algoritma Huffman yang terdapat pada langkah 1-3 dapat mengurangi jumlah bit yang dibutuhkan. Hal ini dilakukan dengan mempersingkat panjang kode untuk tiap karakter, terutama untuk karakter yang frekuensi kemunculannya besar. Pada string “ABACCDA”, frekuensi kemunculan A = 3, B = 1, C = 2, dan D = 1, sehingga dengan menggunakan algoritma di atas diperoleh kode Huffman seperti berikut ini.</p>
+            <p style="text-align:center;"><img src="img/kode_huffman.png" class="gambar1"/><br/>
+            Gambar 1. Kode Huffman untuk string “ABACCDA”</p>
+            <p style="text-align:center;"><img src="img/pohon_huffman.png" class="gambar2"/><br/>
+            Gambar 2. Pohon Huffman untuk string “ABACCDA”</p>
+            <p>Dengan menggunakan algoritma Huffman, string “ABACCDA” direpresentasikan menjadi rangkaian bit: 0 110 0 10 10 111 0. Jadi, jumlah bit yang dibutuhkan untuk menyimpan string hanya 13 bit. Angka ini tentunya jauh lebih kecil dibandingkan angka yang didapatkan tanpa melakukan kompresi yaitu 56 bit.</p>
+            <p>Untuk menguraikan kembali data yang sudah dikodekan dengan algoritma Huffman, dapat digunakan cara sebagai berikut:</p>
+            <ol>
+            	<li>Baca bit pertama dari string biner masukan.</li>
+                <li>Lakukan traversal pada pohon Huffman mulai dari akar sesuai dengan bit yang dibaca. Jika bit yang dibaca adalah 0 maka baca anak kiri, tetapi jika bit yang dibaca adalah 1 maka baca anak kanan.</li>
+                <li>Jika anak dari pohon bukan daun (simpul tanpa anak) maka baca bit berikutnya dari string biner masukan.</li>
+                <li>Hal ini diulang (traversal) hingga ditemukan daun.</li>
+                <li>Pada daun tersebut simbol ditemukan dan proses penguraian kode selesai.</li>
+                <li>Proses penguraian kode ini dilakukan hingga keseluruhan string biner masukan diproses.</li>
+            </ol>
+            <h3>Algoritma <em>Lempel-Ziv-Welch</em> (LZW)</h3>
+            <p>Algoritma LZW dikembangkan dari metode kompresi yang dibuat oleh Ziv dan Lempel pada tahun 1977. Algoritma ini melakukan kompresi dengan menggunakan kamus, di mana fragmen-fragmen teks digantikan dengan indeks yang diperoleh dari sebuah kamus. Pendekatan dengan algoritma ini bersifat adaptif dan efektif karena banyak karakter dapat dikodekan dengan mengacu pada string yang telah muncul sebelumnya dalam teks. Berikut ini adalah cara kerja algoritma kompresi LZW secara lengkap.</p>
+            <ol>
+            	<li>Kamus diinisialisasi dengan semua karakter dasar yang ada, yaitu: {‘A’..’Z’, ’a’..’z’, ’0’..’9’}.</li>
+                <li>Variabel W merupakan karakter pertama dalam stream karakter. Variabel K merupakan karakter berikutnya dalam stream karakter.</li>
+                <li>Lakukan pengecekan apakah (W + K) terdapat dalam kamus. Jika ya, maka W = W + K (gabungkan W dan K menjadi string baru). Jika tidak, maka:<br/>
+                	<ul>
+                    	<li>Output sebuah kode untuk menggantikan string W.</li>
+                        <li>Tambahkan string (W + K) ke dalam kamus dan berikan nomor/kode berikutnya yang belum digunakan dalam kamus untuk string tersebut.</li>
+                        <li>W = K</li>
+                    </ul>
+                </li>
+                <li>Lakukan pengecekan apakah masih ada karakter berikutnya dalam stream karakter. Jika ya, maka kembali ke langkah 2. Jika tidak, maka output kode yang menggantikan string W, lalu terminasi proses (stop).</li>
+            </ol>
+            <p>Sebagai contoh, string “ABBABABAC” akan dikompresi dengan menggunakan LZW. Kamus pada awal proses diisi dengan tiga karakter dasar, yaitu: ‘A’, ‘B’, dan ‘C’. Berikut ini adalah tahapan proses kompresi.</p>
+            <p style="text-align:center;"><img src="img/tabel_lzw.png" class="gambar1"/><br/>
+            Gambar 3. Tahapan Kompresi Algoritma LZW</p>
+            <p>Kolom posisi menyatakan posisi sekarang dari stream karakter dan kolom karakter menyatakan karakter yang terdapat pada posisi tersebut. Kolom dictionary menyatakan string baru yang sudah ditambahkan ke dalam dictionary dan nomor indeks untuk string tersebut ditulis dalam kurung siku. Kolom output menyatakan kode output yang dihasilkan oleh langkah kompresi. Berikut ini adalah hasil proses kompresi.</p>
+            <p style="text-align:center;"><img src="img/gambar_lzw.png" class="gambar1"/><br/>
+            Gambar 4. Hasil Proses Kompresi Algoritma LZW</p>
+            <p>Proses dekompresi data pada algoritma LZW tidak jauh berbeda dengan proses kompresinya. Pada dekompresi LZW, juga dibuat tabel kamus dari data input kompresi sehingga tidak diperlukan penyertaan tabel kamus ke dalam data kompresi. Berikut ini adalah langkah-langkah dekompresi algoritma LZW:</p>
+            <ol>
+            	<li>Kamus diinisialisasi dengan semua karakter dasar yang ada, yaitu: {‘A’..’Z’,’a’..’z’,’0’..’9’}.</li>
+                <li>CW = kode pertama dari stream kode (menunjuk ke salah satu karakter dasar).</li>
+                <li>Lihat kamus dan output string dari kode tersebut (string.CW) ke stream karakter.</li>
+                <li>PW = CW; CW = kode berikutnya dari stream kode.</li>
+                <li>Cek apakah string.CW terdapat dalam kamus. Jika ada, maka:<br/>
+                	<ul>
+                    	<li>Output string.CW ke stream karakter.</li>
+                        <li>P = string.PW</li>
+                        <li>C = karakter pertama dari string.CW</li>
+                    	<li>Tambahkan string (P + C) ke dalam kamus.</li>
+                    </ul>
+                    Jika tidak, maka:<br/>
+                    <ul>
+                    	<li>P = string.PW</li>
+                        <li>C = karakter pertama dari string.PW</li>
+                        <li>Output string (P + C) ke stream karakter dan tambahkan string tersebut ke dalam kamus (sekarang berkorespondensi dengan CW).</li>
+                    </ul>
+                </li>
+                <li>Cek apakah masih terdapat kode di stream kode. Jika ya, maka kembali ke langkah 4. Jika tidak, maka terminasi proses (stop).</li>
+            </ol>
+            <h3>Algoritma <em>Dynamic Markov Compression</em> (DMC)</h3>
+            <p>Algoritma DMC merupakan algoritma kompresi data yang dikembangkan oleh Gordon Cormack dan Nigel Horspool. Algoritma ini menggunakan pengkodean aritmetika mirip dengan prediksi oleh pencocokan sebagian (PPM), kecuali bahwa input diperkirakan satu bit pada satu waktu (bukan dari satu byte pada suatu waktu). DMC merupakan algoritma kompresi yang adaptif, karena struktur mesin finite-state berubah seiring dengan pemrosesan file. Kemampuan kompresinya tergolong amat baik, meskipun waktu komputasi yang dibutuhkan lebih besar dibandingkan metode lain dan membutuhkan sedikit lebih banyak memori.</p>
+            <p>Pada DMC, simbol alfabet input diproses per bit, bukan per byte. Setiap output transisi menandakan berapa banyak simbol tersebut muncul. Penghitungan tersebut dipakai untuk memperkirakan probabilitas dari transisi. Contohnya pada gambar berikut, transisi yang keluar dari state 1 diberi label 0/5, artinya bit 0 di state 1 terjadi sebanyak 5 kali.</p>
+            <p style="text-align:center;"><img src="img/gambar_dmc.jpg" class="gambar5"/><br/>
+            Gambar 5. Model untuk Metode DMC</p>
+            <p>Secara umum, transisi ditandai dengan 0/p atau 1/q dimana p dan q menunjukkan jumlah transisi dari state dengan input 0 atau 1. Nilai probabilitas bahwa input selanjutnya bernilai 0 adalah p / (p + q) dan probabilitas input selanjutnya bernilai 1 adalah q / (p + q). Lalu bila bit sesudahnya ternyata bernilai 0, jumlah bit 0 yang ditransisi sekarang ditambah satu menjadi p + 1. Begitu pula bila bit sesudahnya ternyata bernilai 1, jumlah bit 1 yang ditransisi sekarang ditambah satu menjadi q + 1. Berikut ini adalah rincian algoritma kompresi DMC:</p>
+            <ol>
+            	<li>s = 1 (jumlah state sekarang)</li>
+                <li>t = 1 (state sekarang)</li>
+            	<li>T[1][0] = T[1][1] = 1 (model inisialisasi)</li>
+            	<li>C[1][0] = C[1][1] = 1 (inisialisasi untuk menghindari masalah frekuensi nol)</li>
+            	<li>Untuk setiap input bit e:
+                	<ul>
+                    	<li>u = t</li>
+                        <li>t = T[u][e] (ikuti transisi)</li>
+                        <li>Kodekan e dengan probabilitas: C[u][e] / (C[u][0] + C[u][1])</li>
+                        <li>C[u][e] = C[u][e] + 1</li>
+                        <li>Jika ambang batas cloning tercapai, maka:
+                        	<ul>
+                            	<li>s = s + 1 (state baru t’)</li>
+                                <li>T[u][e] = s; T[s][0] = T[t][0]; T[s][1] = T[t][1]</li>
+                            	<li>Pindahkan beberapa dari C[t] ke C[s]</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Masalah tidak terdapatnya kemunculan suatu bit pada state dapat diatasi dengan menginisialisasi model awal state dengan satu. Probabilitas dihitung menggunakan frekuensi relatif dari dua transisi yang keluar dari state yang baru.</p>
+            <p>Jika frekuensi transisi dari suatu state t ke state sebelumnya, yaitu state u, sangat tinggi, maka state t dapat di-cloning. Ambang batas nilai cloning harus disetujui oleh encoder dan decoder. State yang di-cloning diberi simbol t’. Aturan cloning adalah sebagai berikut:</p>
+            <ul>
+            	<li>Semua transisi dari state u dikirim ke state t’. Semua transisi dari state lain ke state t tidak berubah.</li>
+                <li>Jumlah transisi yang keluar dari t’ harus mempunyai rasio yang sama (antara 0 dan 1) dengan jumlah transisi yang keluar dari t.</li>
+                <li>Jumlah transisi yang keluar dari t dan t’ diatur supaya mempunyai nilai yang sama dengan jumlah transisi yang masuk.</li>
+            </ul>
+            <p style="text-align:center;"><img src="img/before_cloning.jpg" class="gambar5"/><br/>
+            Gambar 6. Model Markov Sebelum Cloning</p>
+            <p style="text-align:center;"><img src="img/after_cloning.jpg" class="gambar5"/><br/>
+            Gambar 7. Model Markov Setelah Cloning</p>
+        	<h3>Perbandingan Kinerja Algoritma Huffman, LZW, dan DMC</h3>
+            <p>Kita sudah membahas definisi dan cara kerja dari masing-masing algoritma kompresi data. Sekarang, akan dibahas perbandingan kinerja dari ketiga algoritma kompresi tersebut. Jika kinerja algoritma Huffman dibandingkan dengan algoritma LZW dan DMC, maka akan diperoleh hasil seperti berikut ini.</p>
+            <p style="text-align:center;"><img src="img/box_plot_rasio.jpg" class="gambar5"/><br/>
+            Gambar 8. Box Plot Rasio Kompresi Algoritma Huffman, LZW, dan DMC</p>
+            <p style="text-align:center;"><img src="img/box_plot_kecepatan.jpg" class="gambar5"/><br/>
+            Gambar 9. Box Plot Kecepatan Kompresi Algoritma Huffman, LZW, dan DMC</p>
+            <p style="text-align:center;"><img src="img/perbandingan_rasio.jpg" class="gambar5"/><br/>
+            Gambar 10. Grafik Perbandingan Rasio Kompresi Algoritma Huffman, LZW, dan DMC</p>
+            <p style="text-align:center;"><img src="img/perbandingan_kec.jpg" class="gambar5"/><br/>
+            Gambar 11. Grafik Perbandingan Rasio Kompresi Algoritma Huffman, LZW, dan DMC</p>
+            <p>Dari grafik di atas, dapat kita lihat bahwa secara rata-rata algoritma DMC menghasilkan rasio file hasil kompresi yang terbaik (41.5% ± 25.9), diikuti algoritma LZW (60.2% ± 28.9) dan terakhir algoritma Huffman (71.4% ± 15.4). Selain itu, dapat kita lihat juga bahwa secara rata-rata algoritma LZW membutuhkan waktu kompresi yang tersingkat (kecepatan kompresinya = 1139 KByte/sec ± 192,5), diikuti oleh algoritma Huffman (555,8 KByte/sec ± 55,8), dan terakhir DMC (218,1 KByte/sec ± 69,4). DMC mengorbankan kecepatan kompresi untuk mendapatkan rasio hasil kompresi yang baik. File yang berukuran sangat besar membutuhkan waktu yang sangat lama bila dikompresi dengan DMC.</p>
+            <p>Secara keseluruhan, dapat disimpulkan bahwa algoritma Huffman dapat digunakan sebagai dasar untuk kompresi data karena pengaplikasiannya cukup mudah, dan dapat digunakan dalam berbagai jenis data. Rasio file hasil kompresi terbaik dapat diperoleh dengan menggunakan algoritma DMC. Sedangkan, algoritma yang memerlukan waktu kompresi tersingkat adalah algoritma LZW. DMC mengorbankan kecepatan kompresi untuk mendapatkan rasio hasil kompresi yang baik. Apabila dibandingkan dengan algoritma LZW dan DMC dalam kompresi data, algoritma Huffman masih kalah dalam hal rasio kompresi data maupun kecepatan kompresinya.</p><br/><br/><br/>
+            <h3>Referensi</h3>
+            [1] R. Munir, “Algoritma Huffman”, dalam Diktat Kuliah Matematika Diskrit. Bandung: Penerbit ITB, 2003.<br/>
+            [2] Anon., Algoritma Kompresi Data. [Online] Tersedia dalam: http://slailinux.blogspot.co.id/2012/04/algoritma-kompresi-data.html. [diakses 24 Mei 2017 pukul 15.00 WIB].<br/>
+            [3] Anon., Algoritma DMC. [Online] Tersedia dalam: http://knxbmt.blogspot.co.id/2010/06/algoritma-dmc.html. [diakses 24 Mei 2017 pukul 16.00 WIB].<br/> 
+            [4]   Howe, D., Free Online Dictionary of Computing. [Online] Tersedia dalam: http://www.foldoc.org. [diakses 24 Mei 2017 pukul 13.00 WIB].<br/>
+            </div>
+        </div>
+    	<div id="container_right2">
+        	<div id="text">
+            	<h3>Contact Me:</h3>
+        		<a href="https://www.facebook.com/crahels" class="fa fa-facebook"></a>Rachel Sidney<br/>
+				<a href="#" class="fa fa-google"></a>sidney.rachel@gmail.com<br/>
+				<a href="https://www.instagram.com/crahels/" class="fa fa-instagram"></a>@crahels<br/>
+				<a href="#" class="fa fa-snapchat-ghost"></a>@crahels<br/>
+				<a href="https://twitter.com/re_sidney" class="fa fa-twitter"></a>@re_sidney<br/>
+        	</div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+		document.getElementById("defaultOpen").click();
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		$(document).ready(function(){
+	   		$(window).bind('scroll', function() {
+	   			var navHeight = 0;
+				if ($(window).scrollTop() > navHeight) {
+					$('.tab').addClass('fixed');
+			 	}
+			 	else {
+					$('.tab').removeClass('fixed');
+			 	}
+			});
+		});
+	</script>
+</body>
+</html>
