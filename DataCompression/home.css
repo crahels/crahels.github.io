@@ -8,9 +8,9 @@ html, body {
 	height: 100%;
 }
 
-.container {
+/*.container {
 	overflow-x: hidden;
-}
+}*/
 
 .gambar1 {
     width: 400px;
@@ -31,6 +31,7 @@ html, body {
 	width: 77%;
 	height: 1500px;
 	float: left;
+	position: relative;
 	background-color:#f6b94f;
 }
 
@@ -46,6 +47,7 @@ html, body {
 	width: 77%;
 	height: 6400px;
 	float: left;
+	position: relative;
 	background-color:#f6b94f;
 }
 
@@ -61,6 +63,7 @@ html, body {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	padding: 5px 15px;
 	text-align: justify;
+	position: relative;
 }
 
 .tab {
