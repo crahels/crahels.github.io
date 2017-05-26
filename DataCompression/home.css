@@ -46,7 +46,7 @@ html, body {
 
 #container_left2 {
 	width: 77%;
-	height: 6400px;
+	height: 8000px;
 	float: left;
 	position: relative;
 	background-color:#f6b94f;
@@ -54,7 +54,7 @@ html, body {
 
 #container_right2 {
 	width: 23%;
-	height: 6400px;
+	height: 8000px;
 	position: relative;
 	background-color:#b55303;
 	float:right;
@@ -65,6 +65,7 @@ html, body {
 	padding: 5px 15px;
 	text-align: justify;
 	position: relative;
+	font-size: 20px;
 }
 
 .tab {
