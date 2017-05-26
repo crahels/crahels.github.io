@@ -1,12 +1,19 @@
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+var interval = 2500;
+var switching = setInterval("plusSlides(1,true)",interval);
+
+function plusSlides(n,isAuto) {
+  showSlides(slideIndex += n,isAuto);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+/*function currentSlide(n) {
+  showSlides(slideIndex = n,false);
+}*/
+
+function stopTimer() {
+	clearInterval(switching);
 }
 
-function showSlides(n) {
+function showSlides(n,isAuto) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   if (n > slides.length) {slideIndex = 1}    
@@ -14,7 +21,12 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
-  slides[slideIndex-1].style.display = "block";  
+  
+  slides[slideIndex-1].style.display = "block";
+  if (isAuto == false) { 
+	  stopTimer();
+  	switching = setInterval("plusSlides(1,true)",interval);
+  }
 }
 
 function openCity(evt, cityName) {
