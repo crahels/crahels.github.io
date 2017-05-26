@@ -17,21 +17,18 @@
     <div class="container">
 	<div class="container_top">
 		<div class="mySlides fade">
-  			<img src="img/header3.jpg" style="width: 100%">
-  			<div class="text">Your Only Limit Is You</div>
+  			<img src="img/header1.jpg" style="width: 100%">
 		</div>
 
 		<div class="mySlides fade">
   			<img src="img/header2.jpg" style="width: 100%">
-  			<div class="text2">Love Your Neighbor As Yourself</div>
 		</div>
 
 		<div class="mySlides fade">
-  			<img src="img/header1.jpg" style="width: 100%">
-  			<div class="text">Stop Wishing. Start Doing.</div>
+  			<img src="img/header3.jpg" style="width: 100%">
 		</div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1,false)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1,false)">&#10095;</a>
 	</div>
 	<div id="London" class="tabcontent">
         <div id="container_left">
@@ -232,7 +229,7 @@
     <script>
 		document.getElementById("defaultOpen").click();
 		var slideIndex = 1;
-		showSlides(slideIndex);
+		showSlides(slideIndex,true);
 	</script>
 </body>
 </html>
