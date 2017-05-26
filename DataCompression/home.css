@@ -30,7 +30,7 @@ html, body {
 
 #container_left {
 	width: 77%;
-	height: 1500px;
+	min-height: 1500px;
 	float: left;
 	position: relative;
 	background-color:#f6b94f;
@@ -46,7 +46,7 @@ html, body {
 
 #container_left2 {
 	width: 77%;
-	height: 8000px;
+	min-height: 8000px;
 	float: left;
 	position: relative;
 	background-color:#f6b94f;
