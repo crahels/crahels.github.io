@@ -33,7 +33,6 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
-    
 	<div id="London" class="tabcontent">
         <div id="container_left">
         	<div id="text">
@@ -234,17 +233,6 @@
 		document.getElementById("defaultOpen").click();
 		var slideIndex = 1;
 		showSlides(slideIndex);
-		$(document).ready(function(){
-	   		$(window).bind('scroll', function() {
-	   			var navHeight = 0;
-				if ($(window).scrollTop() > navHeight) {
-					$('.tab').addClass('fixed');
-			 	}
-			 	else {
-					$('.tab').removeClass('fixed');
-			 	}
-			});
-		});
 	</script>
 </body>
 </html>
