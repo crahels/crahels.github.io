@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Prospector</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Fauna+One|Handlee|Neuton" rel="stylesheet">
+<script src="home.js"></script>
+</head>
+
+<body>
+	<div class="tab">
+  		<button class="tablinks" onclick="openCity(event, 'London'); topFunction()" id="defaultOpen"><div id="Header">Home</div></button>
+        <button class="tablinks" onclick="openCity(event, 'Paris'); topFunction()"><div id="Header">About Me</div></button>
+  		<button class="tablinks" onclick="openCity(event, 'Tokyo'); topFunction()"><div id="Header">Content</div></button>
+	</div>
+    <div class="container">
+	<div class="container_top">
+		<div class="mySlides fade">
+  			<img src="img/header1.jpg" style="width: 100%">
+		</div>
+
+		<div class="mySlides fade">
+  			<img src="img/header2.jpg" style="width: 100%">
+		</div>
+
+		<div class="mySlides fade">
+  			<img src="img/header3.jpg" style="width: 100%">
+		</div>
+        <a class="prev" onclick="plusSlides(-1,false)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1,false)">&#10095;</a>
+	</div>
+	<div id="London" class="tabcontent">
+        <div id="container_left">
+        	<div id="text1">
+        		<h1 align="center">Welcome to My Website!</h1>
+  				<p>Hai! Selamat datang di website saya. To be honest, ini merupakan website pertama saya yang bukan merupakan blog. Thanks to github! Jadi, sebenarnya tujuan utama saya buat website ini adalah dalam rangka memenuhi tugas lab yang diberikan oleh kakak-kakak lab GAIB kepada Ca-GAIB 2017. Karena ini merupakan website yang pertama kali saya buat, maklum ya teman-teman kontennya hanya sedikit dan design-nya masih kelihatan pemula banget.</p>
+                <p>Sebenarnya saya dari dulu tidak begitu tertarik dengan web design. Tapi, setelah membuat website ini, dipikir-pikir seru juga yah bikin website itu, meski ribet karena harus memikirkan dari segi design dan code-nya sekaligus. Segitu aja deh intermezzo-nya. Selamat menjelajah!</p>
+        	</div>
+        </div>
+        <div id="container_right">
+        	<div id="text">
+            	<h3>Contact Me</h3>
+        		<a href="https://www.facebook.com/crahels" class="fa fa-facebook"></a>Rachel Sidney<br/>
+				<a href="#" class="fa fa-google"></a>sidney.rachel@gmail.com<br/>
+				<a href="https://www.instagram.com/crahels/" class="fa fa-instagram"></a>@crahels<br/>
+				<a href="#" class="fa fa-snapchat-ghost"></a>@crahels<br/>
+				<a href="https://twitter.com/re_sidney" class="fa fa-twitter"></a>@re_sidney<br/>
+        	</div>
+        </div>
+    </div>
+
+	<div id="Paris" class="tabcontent">
+   		<div id="container_left">
+        	<div id="text2">
+        		<h1 align="center">Find Out More About Me</h1>
+                <p style="text-align:center;"><img src="img/me.png" class="me"/></p>
+  				<p>Selamat datang di laman ini. Di sini saya akan berbagi cerita sedikit mengenai diri saya. Saya dilahirkan dengan nama Rachel Sidney Devianti di Jakarta pada tanggal 18 Desember 1997. Namun, saat ini saya menghabiskan sebagian besar waktu saya untuk berkuliah di Bandung. Jurusan yang saya ambil adalah Teknik Informatika dan pada saat ini saya akan memasuki semester ke-5.</p>
+                <p>Jangan kalian pikir karena saya mengambil jurusan Teknik Informatika lalu saya hobi coding yah. Coding itu hanyalah hal yang saya sukai, namun hobi saya yang sesungguhnya adalah naik sepeda dan nonton. Di sela-sela kesibukan saya, saya selalu menyempatkan diri untuk menonton, entah itu nonton bioskop, nonton Youtube, ataupun nonton online. Karena bagi saya, ketika kita terlalu sibuk, kita cenderung akan menjadi stress. Oleh sebab itu, kita butuh refreshing untuk menjernihkan otak kita, salah satunya adalah dengan melakukan hal yang kita sukai.</p>
+                <p>Motto hidup yang saya pegang teguh sekarang ini adalah "Love your neighbor as yourself". Bagi saya, yang terpenting di dalam hidup ini adalah dimana kita dapat menyayangi sesama kita seperti kita menyayangi diri kita sendiri. Hal ini sebenarnya sangat sulit untuk dilakukan mengingat sifat dasar kita adalah cenderung menyayangi diri kita sendiri dan tidak memperdulikan orang lain. Namun, seiring berjalannya waktu saya makin belajar untuk memaknai motto hidup saya ini. Sekian info-info yang dapat saya bagikan mengenai diri saya. Senang berbagi dengan kamu!</p>
+        	</div>
+        </div>
+        <div id="container_right">
+        	<div id="text">
+            	<h3>Contact Me</h3>
+        		<a href="https://www.facebook.com/crahels" class="fa fa-facebook"></a>Rachel Sidney<br/>
+				<a href="#" class="fa fa-google"></a>sidney.rachel@gmail.com<br/>
+				<a href="https://www.instagram.com/crahels/" class="fa fa-instagram"></a>@crahels<br/>
+				<a href="#" class="fa fa-snapchat-ghost"></a>@crahels<br/>
+				<a href="https://twitter.com/re_sidney" class="fa fa-twitter"></a>@re_sidney<br/>
+        	</div>
+        </div>
+    </div>
+
+	<div id="Tokyo" class="tabcontent">
+    	<div id="container_left">
+        	<div id="text3">
+  			<h1 align="center">Expert System for Mineral Exploration</h1>
+  			<p>In artificial intelligence, an expert system is a computer system that emulates the decision-making ability of a human expert. Expert systems are designed to solve complex problems by reasoning about knowledge, represented mainly as if–then rules rather than through conventional procedural code. The first expert systems were created in the 1970s and then proliferated in the 1980s. Expert systems were among the first truly successful forms of artificial intelligence (AI) software. An expert system is divided into two subsystems: the inference engine and the knowledge base. The knowledge base represents facts and rules. The inference engine applies the rules to the known facts to deduce new facts. Inference engines can also include explanation and debugging abilities.</p>
+            <p>An expert system is made up of three parts:
+            	<ul>
+            		<li>A user interface<br/>
+                		This is the system that allows a non-expert user to query (question) the expert system, and to receive advice. The user-interface is designed to be a simple to use as possible.
+                	</li>
+                	<li>A knowledge base<br/>
+                		This is a collection of facts and rules. The knowledge base is created from information provided by human experts.
+                	</li>
+                	<li>An inference engine<br/>
+                		This acts rather like a search engine, examining the knowledge base for information that matches the user's query.
+                	</li>
+            	</ul>
+			</p>
+            <p style="text-align:center;"><img src="img/stacks_image_5738.png" class="gambar1"/></p>
+            <p>The non-expert user queries the expert system. This is done by asking a question, or by answering questions asked by the expert system. The inference engine uses the query to search the knowledge base and then provides an answer or some advice to the user.</p>
+            <p>There is so many applications of expert system in life, one of them is in geology. Expert system can be used to conduct mineral exploration. It is called Prospector. Prospector is an expert system designed for decision-making problems in mineral exploration. It aids geologists in evaluating the favorability of an exploration site or region for occurrences of ore deposits of particular types. Once a site has been identified, Prospector can also be used for drilling-site selection.</p>
+            <p>In addition, Geologists had remarked about its potential value as an educational tool. In this regard, the models in the system contain explicit, detailed information from the literature and the experience of expert explorationists, together with explanatory text that can be obtained upon request.</p>
+            <p style="text-align:center;"><img src="img/mineral-exploration.jpg" class="gambar1"/></p>
+            <h3>Characterizations of givens</h3>
+            <p>In the interactive consultation mode of operation, the system is first in the Antecedent mode. A typical consultation session begins with the user volunteering information in the form of simple assertions. A typical consequence of initial volunteering is that a few exact and a number of partial matches are made between volunteered evidence and the nodes in the inference network, and some changes occur in the probabilities of the toplevel hypotheses. Second, once a top-level hypothesis H has been chosen, the program enters the consequent mode. Here it searches the inference network below H to determine what question to ask the user to help resolve the issue. In the batch processing mode, Prospector can automatically generate questionnaires for any inference network. When the data entered in the questionnaire are later transferred to a file, the program can read the answer from the file as if it were in normal interactive mode. When Prospector is used for the drilling site selection, it would also request map data. The user enters it by using a digitizing tablet with a contour editing and display program.</p>
+            <h3>Characterization of Output</h3>
+            <p>Prospector can reach a conclusion about a particular ore deposit. It gives a certainty value of the ore deposit. It as well provides the explanation text for the conclusion. Like Mycin, it allows the user to execute commands as well as to answer questions. For example, in response to a WHY command, the program accessed some explanatory text that the expert has previously prepared to explain why a particular piece of evidence is important. Other commands allow the user to do such things as trace internal inferences, change previous answers, change top-level goals, and obtain summaries of conclusions reached up to that point. When Prospector is used for the drilling site selection, it could also produce the favorability map of the site.</p>
+            <p style="text-align:center;"><img src="img/aust-maps.jpg" class="gambar1"/></p>
+            <h3>Characterization of Data</h3>
+            <p>The data in Prospector is matched against existing models. Most of Prospector’s questions expect Yes/No or certainty answers, although some questions ask for quantities; in the latter case, the likelihood ratio for the rule is a function of that quantity. In some cases, the Prospector may request the user to input the digitizing map data for a drilling site.</p>
+            <h3>Phases</h3>
+            <p>Prospector has 3 modes of operations: Interactive consultation; Batch processing; Compiled execution. For the Interactive consultation mode, there are 2 phases: 1.The antecedent mode. 2.The consequent mode. A typical consultation session begins with the user volunteering information in the form of simple assertions. A typical consequence of initial volunteering is that a few exact and a number of partial matches are made between volunteered evidence and the nodes in the inference network, and some changes occur in the probabilities of the top-level hypotheses. Second, once a top-level hypothesis H has been chosen, the program enters the consequent mode. It searches the inference network below H to determine what question to ask the user to help resolve the issue.</p>
+            <h3>Search Space</h3>
+            <p>In the antecedent mode of an interactive consultation, the program is receiving information; it matches statements from the user against the assertions in the inference network and propagates probability changes up through the network. In the consequent mode, the program is attempting to establish (or rule out) a top-level hypothesis, and it searches the inference network for evidence nodes that are most effective for this task. The strategy that the program uses to choose goals and select evidence is called control strategy.</p>
+            <h3>Space Traversal</h3>
+            <p>A typical consequence of initial volunteering is that a few exact and a number of partial matches are made between volunteered evidence and the nodes in the inference network, and some changes occur in the probabilities of the top-level hypotheses. At this point Prospector turns to the problem of working interactively with the user to choose a top-level hypothesis for further refinement. For each top-level hypothesis, a score is computed that combines the certainty of that hypotheses and an average “effective” certainty of related nodes that were partially matched by volunteered evidence. The top-scoring hypotheses are revealed to the user, who is then given the choice of either following the program’s recommendation or selecting a different hypothesis to pursuer. In either case, the system has a goal hypothesis to work on.</p>
+            <h3>Search Control Category</h3>
+            <p>Once a top-level hypothesis H has been chosen, the program enters the consequent mode. Here it searches the inference network below H to determine what question to ask the user to help resolve the issue. In doing so, Prospector attempts to satisfy the following criteria:
+				<ol>
+                	<li>Effectiveness<br/>
+                    	The evidence sought should have the potential to make a difference in the conclusion.
+                    </li>
+                    <li>Naturalness<br/>
+                    	The program should not jump from topic from topic to topic in a disorganized way that might confuse the user, but should follow a coherent line of reasoning.
+                    </li>
+                    <li>Responsiveness<br/>
+                    	Interactive consultations should not be delayed by time-consuming optimization calculations.
+                    </li>
+                </ol>
+			</p>
+            <h3>Knowledge Representation Method</h3>
+            <p>Prospector system uses models and semantic networks to represents knowledge. Semantic Network is a network of nodes linked together by directed arcs to represent relevant knowledge like taxonomic relations among objects in the domain. Model is a body of knowledge about a particular domain of expertise encoded into the system, which the system can act.</p>
+            <h3>Interaction</h3>
+            <p>The program begins by allowing the user to enter information about the significant types of rocks and minerals that have been observed or suspected to be present. This antecedent mode helps in the selection of models to pursue, which are scored and initially ranked. Once the user selects a particular model, the program enters into the consequent mode and begins asking a series of questions. Most of Prospector’s questions expect Yes/No or certainty answers, although some questions ask for quantities; in the latter case, the likelihood ratio for the rule is a function of that quantity.</p>
+            <h3>Data Collection</h3>
+            <p>The inference network can be used in any of the three operating modes of Prospector (Interactive, batch, compiled). For the application to prospect evaluation, the interactive mode is natural. We can imagine the typical user to be an exploration geologist who has just spend several days making a surface examination of a prospect, who has found evidence that sparks his or her interest, and who would like to receive advice from a specialist in evaluating the degree to which the prospect matches a classical model.</p>
+            <p>The program begins by allowing the user to enter information about the significant types of rocks and minerals that have been observed or suspected to be present. This antecedent mode helps in the selection of models to pursue, which are scored and initially ranked. Once the user selects a particular model, the program enters into the consequent mode and begins asking a series of questions. In some cases, the Prospector may request the user to input the digitizing map data for a drilling site.</p>
+            <h3>Strengths</h3>
+            <p>Strengths of Prospector are:
+            	<ul>
+                	<li>It uses a generic Inference Network to do the knowledge reasoning. This is more accurate and domain independent.</li>
+                    <li>The performance of the Prospector system is not bad.</li>
+                    <li>It uses the Semantic Network to help the Inference Network better understand the assertions. This is effective.</li>
+                </ul>
+			</p>
+            <h3>Weaknesses</h3>
+            <p>Weakness of Prospector is:
+            	<ul>
+                	<li>It is not easy to build a model. As a result, the models are incomplete.</li>
+                </ul>
+			</p>
+            <br/>
+            <br/>
+            <br/>
+            <h3>Referensi</h3>
+            [1] Jackson, Peter (1998), Introduction To Expert Systems (3 ed.), Addison Wesley, p. 2, ISBN 978-0-201-87686-4.<br/>
+            [2] Russell, Stuart; Norvig, Peter (1995). Artificial Intelligence: A Modern Approach (PDF). Simon & Schuster. pp. 22–23. ISBN 0-13-103805-2.<br/>
+            [3] Anon., Expert System. [Online] Available in: https://en.wikipedia.org/wiki/Expert_system. [retrieved 28 Mei 2017 at 06.00 pm].<br/>
+            [4] Zhang, Tao, Profile of Prospector. [Online] Available in: http://web.cs.wpi.edu/~dcb/courses/CS538/documents/2002/Prospector-profile.pdf. [retrieved 28 Mei 2017 at 07.00 pm].<br/>
+            </div>
+        </div>
+    	<div id="container_right">
+        	<div id="text">
+            	<h3>Prospector's Profile</h3>
+        		Sector: Geology<br/><br/>
+                Dates developed: 1976 - 1981<br/><br />
+                Developers: Richard Duda, John Gaschnig, Peter Hart, Rene Reboh, and Nils Nilsson<br/><br />
+                Research Location: SRI International located at Menlo Park, California 94025<br/><br />
+                Machine: DEC PDP-10<br /><br />
+                Language: INTERLISP, an advanced dialect of the LISP language<br /><br />
+        	</div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+		document.getElementById("defaultOpen").click();
+		var slideIndex = 1;
+		showSlides(slideIndex,true);
+	</script>
+</body>
+</html>
