@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Turn It Up!</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Fauna+One|Handlee|Neuton" rel="stylesheet">
+<script src="home.js"></script>
+</head>
+
+<body>
+	<div class="tab">
+  		<button class="tablinks" onclick="openCity(event, 'London'); topFunction()"><div id="Header">Home</div></button>
+        <button class="tablinks" onclick="openCity(event, 'Paris'); topFunction()" id="defaultOpen"><div id="Header">How To Play</div></button>
+  		<button class="tablinks" onclick="openCity(event, 'Tokyo'); topFunction()"><div id="Header">About Us</div></button>
+	</div>
+    <div class="container">
+	<div class="container_top">
+		<div class="mySlides fade">
+  			<img src="img/header_1.jpg" style="width: 100%">
+		</div>
+
+		<div class="mySlides fade">
+  			<img src="img/header2.jpg" style="width: 100%">
+		</div>
+
+		<div class="mySlides fade">
+  			<img src="img/header3.jpg" style="width: 100%">
+		</div>
+        <a class="prev" onclick="plusSlides(-1,false)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1,false)">&#10095;</a>
+	</div>
+	<div id="London" class="tabcontent">
+        <div id="container_left">
+        	<div id="text">
+        		<h1 align="center">Welcome to Our Website!</h1>
+  				<p>This is Turn It Up official website. Turn It Up is designed by Roselina, Ida Ayu Putu Ari C. (Dayu), and Rachel Sidney Devianti. Turn It Up is multi-platform game. We use Android, Arduino, and Unity for developing this game. However, this game have not released yet. We are still in the progress developing it. Feel free to ask questions about this game!</p>
+        	</div>
+        </div>
+        <div id="container_right">
+        	<div id="text1">
+            	<h3>Contact Us</h3>
+				<a href="#" class="fa fa-google"></a>sidney.rachel@gmail.com<br/>
+                <a href="#" class="fa fa-google"></a>roselina.911@gmail.com<br/>
+                <a href="#" class="fa fa-google"></a>dayu.crish@gmail.com<br/>
+        	</div>
+        </div>
+    </div>
+
+	<div id="Paris" class="tabcontent">
+   		<div id="container_left">
+        	<div id="text">
+        		<h1 align="center">How to Play Turn It Up?</h1>
+                <p style="text-align:center;"><img src="img/turn it up copy.png" class="me"/></p>
+  				<h3>Scoring</h3>
+                <p>If the player successfully press the button on time, he/she will get the perfect grade. If the player press the button too early or too slowly, he/she will get good grade. If the player push the wrong button or push the correct button lately, he/she will get miss grade and this means player's score will be decreased.</p>
+                <h3>Combo</h3>
+                <p>If the player successfully press buttons continuously, he/she will get additional combo. The combo is used to boost up score because the highest the combo is, the bigger score the player will get as he/she press the buttons accurately. The value of the combo will reset to zero if the button miss.</p>
+                <h3>Life Bar</h3>
+                <p>When the game is on, there will be life bar that indicates the player's energy. Player who successfully press the buttons continuously, will have more energy. The energy has maximum value. If the player cannot press the button accurately, he/she will lose energy.</p>
+                <h3>Game Over</h3>
+                <p>The game will be over if:
+				<ul>
+                	<li>The player successfully finish the song without running out of energy.</li>
+                    <li>The player does not press the buttons accurately and the life bar turn to zero.</li>
+                    <li>The player stops the game by pressing "Quit" button.</li>
+                </ul>
+				</p>
+        	</div>
+        </div>
+        <div id="container_right">
+        	<div id="text1">
+            	<h3>Contact Us</h3>
+				<a href="#" class="fa fa-google"></a>sidney.rachel@gmail.com<br/>
+                <a href="#" class="fa fa-google"></a>roselina.911@gmail.com<br/>
+                <a href="#" class="fa fa-google"></a>dayu.crish@gmail.com<br/>
+        	</div>
+        </div>
+    </div>
+
+	<div id="Tokyo" class="tabcontent">
+    	<div id="container_left">
+        	<div id="text">
+  			<h1 align="center">Game Developers</h1>
+            <p style="text-align:center;"><img src="img/us.png" class="gambar1"/></p>
+            <p>We are just 3 ordinary girls with a big dream. We want to develop a game that can be enjoyed by people with different backgrounds. We are still in university now. Based on our survey in our university, there are many people who can not enjoy life so we make this game in order to make them happy all the time. Whenever they stress out, they can play our simple and fun game. Hope this is work for you too. Nice to know you!</p>
+            </div>
+        </div>
+    	<div id="container_right">
+        	<div id="text1">
+            	<h3>Contact Us</h3>
+				<a href="#" class="fa fa-google"></a>sidney.rachel@gmail.com<br/>
+                <a href="#" class="fa fa-google"></a>roselina.911@gmail.com<br/>
+                <a href="#" class="fa fa-google"></a>dayu.crish@gmail.com<br/>
+        	</div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+		document.getElementById("defaultOpen").click();
+		var slideIndex = 1;
+		showSlides(slideIndex,true);
+	</script>
+</body>
+</html>
